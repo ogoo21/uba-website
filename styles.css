@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+header {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 60, 90, .7)),
+        url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQon84VZryYmM3Dpt-QRNqMSqoHPy7p3_Mi-xUKwVxPaw&s=10);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 20px rgb(0, 0, .1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0b4d78;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #0b4d78
+}
+
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text {
+    color: white;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background: #0b4d78;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 3s;
+}
+
+.btn:hover {
+    background: #073552;
+}
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.about h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #0b4d78;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 80px 10%;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: 3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h1 {
+    margin-bottom: 15px;
+    color: #0b4d78;
+
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 80px 10%;
+    background: #0b4d78;
+    color: white;
+    text-align: center;
+}
+
+.stat h1 {
+    font-size: 50px;
+}
+
+.cta {
+    padding: 80px 10%;
+    text-align: center;
+    background: white;
+}
+
+.cta h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0b4d78;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+footer{
+    background: #08263d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
